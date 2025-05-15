@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Contact Page
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5" >
+    <div class="row align-items-center">
+       
+        <div class="col-md-6">
+          <h2 style="font-size: 40px;">Get in Touch</h2>
+            <p style="font-size: 18px;">
+                We're always looking to connect with passionate people, organizations, or innovators who want to collaborate, inspire, or simply say hello. 
+                Whether it's a new idea, a potential partnership, or just a conversation, we'd love to hear from you.
+            </p>
+            <hr style="background-color: grey;">
+            <ul style="font-size: 18px;">
+                <li><strong>Email:</strong> Coming Soon...</li>
+                <li><strong>Phone:</strong> Coming Soon...</li>
+                <li><strong>Instagram:</strong> <a href="#" target="_blank">Coming Soon</a></li>
+                <li><strong>LinkedIn:</strong> <a href="#" target="_blank">Coming Soon</a></li>
+            </ul>
+        </div>
+
+        <!-- Form on the right -->
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form action="{{ url_for('contact_page') }}" method="POST" class="form-register">
+                {{ form.hidden_tag() }}
+
+                <div class="form-group mb-3">
+                    {{ form.name.label() }}
+                    {{ form.name(class='form-control', placeholder='Name') }}
+                </div>
+
+                
+
+                <div class="form-group mb-3">
+                    {{ form.email_address.label() }}
+                    {{ form.email_address(class='form-control', placeholder='Your Email Address') }}
+                </div>
+
+                <div class="form-group mb-4">
+                    {{ form.phone.label() }}
+                    {{ form.phone(class='form-control', placeholder='Phone') }}
+                </div>
+                
+                <div class="form-group mb-4">
+                    {{ form.description.label() }}
+                    {{ form.description(class='form-control', placeholder='Say whatever you want') }}
+                </div>
+
+                {{ form.submit(class='btn btn-primary btn-lg w-100') }}
+            </form>
+        </div>
+    </div>
+
+  </div>
+
+
+
+{% endblock%}

@@ -1,0 +1,283 @@
+{% extends "base.html" %}
+
+{% block title %}
+About Us Page
+{% endblock %}
+
+{% block body_class %}about-bg{% endblock %}
+
+{% block content %}
+<style>.about-bg {
+    background-color: #B6B09F;
+    color: #000000;
+}</style>
+<div class="container mt-5">
+    <h1 class="text-center">Meet Team 5AM</h1>
+    <hr style="background-color: grey;">
+    <h4 class="text-center">Born in the quietest hour. Built for the loudest impact.</h4>
+
+    <div class="row align-items-center mt-5">
+        <div class="col-md-6 mb-4">
+            <img src="{{ url_for('static', filename='5am1.jpg') }}" alt="Team 5AM" class="img-fluid rounded shadow"
+                style="max-height: 500px;">
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Who We Are & What We Do</h2>
+            <p class="text-center px-3">
+                We are Team 5AM — a group of aspiring actuary, also a developers, designers, and thinkers who came
+                together during the quietest hours to build something meaningful.
+                <br><br>
+                Whether it's solving real-world business problems or innovating with code, our focus is on delivering
+                high-impact solutions with heart and hustle.
+            </p>
+            <div class="text-center mt-4">
+                <a href="{{ url_for('contact_page') }}" class="btn btn-primary px-4 py-2">Contact Team 5AM</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-3">
+    <hr style="background-color: grey;">
+    <h2 class="text-center">The Builders Behind Team 5AM</h2>
+</div>
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+        <!-- Member 1 -->
+        <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+            <img src="{{ url_for('static', filename='ankush.jpg') }}" class="rounded-circle img-fluid" alt="Member 1"
+                style="width: 150px; height: 150px; object-fit: cover;">
+            <br>
+            <a class="mt-2" href="#ankush-profile">Ankush Singh</a>
+            <br>
+            <p mt-2>AI/ML</p>
+
+        </div>
+        <!-- Member 2 -->
+        <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+            <img src="{{ url_for('static', filename='swastika.jpg') }}" class="rounded-circle img-fluid" alt="Member 2"
+                style="width: 150px; height: 150px; object-fit: cover;">
+            <a class="mt-2" href="#swastika-profile">Swastika Timilsina</a>
+            <br>
+            <p class="mt-2">AI/ML</p>
+        </div>
+        <!-- Member 3 -->
+        <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+            <img src="{{ url_for('static', filename='bigyan.jpg') }}" class="rounded-circle img-fluid" alt="Member 3"
+                style="width: 150px; height: 150px; object-fit: cover;">
+            <a class="mt-2" href="#bigyan-profile">Bigyan Mishra</a>
+            <br>
+            <p class="mt-2">Backend Developer</p>
+        </div>
+        <!-- Member 4 -->
+        <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+            <img src="{{ url_for('static', filename='rebika.jpg') }}" class="rounded-circle img-fluid" alt="Member 4"
+                style="width: 150px; height: 150px; object-fit: cover;">
+
+
+            <a class="mt-2" href="#rebika-profile">Rebika Subedi</a>
+            <br>
+            <p class="mt-2">Project Manager & Pitch Specialist </p>
+        </div>
+        <!-- Member 5 -->
+        <div class="col-6 col-sm-4 col-md-2 text-center mb-4">
+            <img src="{{ url_for('static', filename='utsab.jpg') }}" class="rounded-circle img-fluid" alt="Member 5"
+                style="width: 150px; height: 150px; object-fit: cover;">
+            <a class="mt-2" href="#utsab-profile">Utsab Duwadi</a>
+            <br>
+            <p class="mt-2">Front-End Developer</p>
+        </div>
+    </div>
+    <hr style="background-color: grey;">
+    <!-- Detailed Section Below all the intro of the team members -->
+     <!-- For ankush -->
+    <div class="row justify-content-center">
+
+        <div class="col-md-5 mb-4">
+            <img src="{{ url_for('static', filename='ankush.jpg') }}" alt="Team 5AM" class="rounded-circle img-fluid"
+                style="width: 350px; height: 350px; object-fit: cover;">
+        </div>
+        <div class="col-md-5">
+            <div id="ankush-profile">
+                <h2>Ankush Singh</h2>
+                <p>AI/ML Specialist</p>
+                <hr style="background-color: red;">
+                <p>Ankush is the machine learning brain of Team 5AM. With a sharp mind for data patterns and model
+                    optimization, he's the one who turns raw datasets into intelligent, working solutions.
+                    From predictive models to smart systems, Ankush builds the core engine that powers our ideas — and
+                    always before sunrise.</p>
+                <a href="https://www.linkedin.com/in/ankush-ceeng/" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+                    <img src="https://th.bing.com/th/id/R.60eec5c5cee641ceebc7eee90f372509?rik=fV0vPiQfSyOokQ&pid=ImgRaw&r=0"
+                        alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">LinkedIn</span>
+
+                </a>
+                <br>
+                <a href="https://www.facebook.com" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+
+                    <img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png"
+                        alt="Facebook" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">Facebook</span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <hr style="background-color: grey;">
+
+    <!-- for swastika -->
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <img src="{{ url_for('static', filename='swastika.jpg') }}" alt="Team 5AM" class="rounded-circle img-fluid"
+                style="width: 350px; height: 350px; object-fit: cover;">
+        </div>
+        <div class="col-md-5">
+            <div id="swastika-profile">
+                <h2>Swastika Timilsina</h2>
+                <p>AI/ML Specialist</p>
+                <hr style="background-color: red;">
+                <p>Swastika is the machine learning brain of Team 5AM. With a sharp mind for data patterns and model
+                    optimization, she's the one who turns raw datasets into intelligent, working solutions.
+                    From predictive models to smart systems, Swastika builds the core engine that powers our ideas — and
+                    always before sunrise.</p>
+                <a href="https://www.linkedin.com/in/swastika-timilsina-02b920360/" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+                    <img src="https://th.bing.com/th/id/R.60eec5c5cee641ceebc7eee90f372509?rik=fV0vPiQfSyOokQ&pid=ImgRaw&r=0"
+                        alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">LinkedIn</span>
+
+                </a>
+                <br>
+                <a href="https://www.facebook.com" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+
+                    <img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png"
+                        alt="Facebook" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">Facebook</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <hr style="background-color: grey;">
+    <!-- For Bigyan -->
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <img src="{{ url_for('static', filename='bigyan.jpg') }}" alt="Team 5AM" class="rounded-circle img-fluid"
+                style="width: 350px; height: 350px; object-fit: cover;">
+        </div>
+        <div class="col-md-5">
+            <div id="bigyan-profile">
+                <h2>Bigyan Mishra</h2>
+                <p> Backend Developer</p>
+                <hr style="background-color: red;">
+                <p>Bigyan is the backbone of Team 5AM — literally. He architects the logic, builds robust APIs, and
+                    ensures everything under the hood runs smoothly. While others see just lines of code, Bigyan sees
+                    blueprints for seamless functionality.
+                    If our project were a machine, Bigyan's the engineer keeping it all in motion.</p>
+                <a href="https://www.linkedin.com/in/bigyan-mishra-050a04307/" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+                    <img src="https://th.bing.com/th/id/R.60eec5c5cee641ceebc7eee90f372509?rik=fV0vPiQfSyOokQ&pid=ImgRaw&r=0"
+                        alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">LinkedIn</span>
+
+                </a>
+                <br>
+                <a href="https://www.facebook.com" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+
+                    <img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png"
+                        alt="Facebook" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">Facebook</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <hr style="background-color: grey;">
+    <!-- For Rebika -->
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <img src="{{ url_for('static', filename='rebika.jpg') }}" alt="Team 5AM" class="rounded-circle img-fluid"
+                style="width: 350px; height: 350px; object-fit: cover;">
+        </div>
+        <div class="col-md-5">
+            <div id="rebika-profile">
+                <h2>Rebika Subedi</h2>
+                <p> Project Manager & Pitch Specialist </p>
+                <hr style="background-color: red;">
+                <p>Rebika is the voice and vision of Team 5AM.
+                    As our Project Manager, she keeps the team aligned, deadlines on track, and chaos in check. When
+                    it's time to present, she transforms our work into a compelling story — owning every stage and
+                    winning every room.
+                    Strategy, structure, and storytelling? That's Rebika's domain.</p>
+                <a href="https://www.linkedin.com/in/rebikasubedi/" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+                    <img src="https://th.bing.com/th/id/R.60eec5c5cee641ceebc7eee90f372509?rik=fV0vPiQfSyOokQ&pid=ImgRaw&r=0"
+                        alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">LinkedIn</span>
+
+                </a>
+                <br>
+                <a href="https://www.facebook.com" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+
+                    <img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png"
+                        alt="Facebook" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">Facebook</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <hr style="background-color: grey;">
+    <!-- For utsab duwadi -->
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+            <img src="{{ url_for('static', filename='utsab.jpg') }}" alt="Team 5AM" class="rounded-circle img-fluid"
+                style="width: 350px; height: 350px; object-fit: cover;">
+        </div>
+        <div class="col-md-5">
+            <div id="utsab-profile">
+                <h2>Utsab Duwadi</h2>
+                <p>Front-End Developer</p>
+                <hr style="background-color: red;">
+                <p>Utsab is the pixel-perfect visionary of Team 5AM. As our front-end developer, he brings design to
+                    life with clean code, intuitive UX, and a sharp eye for detail. Whether it's responsive layouts or
+                    interactive elements, Utsab ensures our projects don't just work — they *wow*. He's the bridge
+                    between beauty and functionality.</p>
+
+                <a href="https://www.linkedin.com/in/utsab-duwadi-4773a825a/" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+                    <img src="https://th.bing.com/th/id/R.60eec5c5cee641ceebc7eee90f372509?rik=fV0vPiQfSyOokQ&pid=ImgRaw&r=0"
+                        alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">LinkedIn</span>
+
+                </a>
+                <br>
+                <a href="https://www.facebook.com" target="_blank"
+                    style="text-decoration: none; display: inline-flex; align-items: center;">
+
+                    <img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png"
+                        alt="Facebook" style="height: 20px; width: 20px; margin-right: 6px;">
+                    <span style="font-weight: bold;">Facebook</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+{% endblock %}

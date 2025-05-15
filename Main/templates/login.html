@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block content %}
+<div class="align-items-center" style="height: 70vh;">
+
+  <form class="container" style="max-width: 400px;" method="POST">
+    <div class="text-center">
+    <img src="static/login.jpeg" alt="Login Image"  style="height: 200px;width:200px;">
+    </div>
+    <h1 class="text-center">Login to Explore.</h1>
+    <br>
+    <!-- Email input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <label class="form-label" for="form2Example1">User Name</label>
+      <input type="text" id="form2Example1" class="form-control" name="name" placeholder="Username"/>
+    </div>
+
+    <!-- Password input -->
+    <div data-mdb-input-init class="form-outline mb-4">
+      <label class="form-label" for="form2Example2">Your Password</label>
+      <input type="password" id="form2Example2" class="form-control" name = "password" placeholder="Password"/>
+    </div>
+
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      
+
+      <div class="col text-end text-center">
+        <!-- Simple link -->
+        <a href="{{url_for('gallery_page')}}" >Forgot password?</a>
+      </div>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4 w-100">
+      Sign in
+    </button>
+
+    <!-- Register buttons -->
+    <div class="text-center">
+      <p>Not a member? <a href="{{url_for('login_page')}}">Register</a></p>
+      
+    </div>
+  </form>
+</div>
+{% endblock %}
