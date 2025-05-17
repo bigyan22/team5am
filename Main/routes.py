@@ -40,10 +40,9 @@ def home_page():
 
 
 @app.route('/about')
-@login_required
 def about_page():
     return render_template('about.html')
-    pass
+
 @app.route('/contact', methods=['GET', 'POST'])
 @login_required
 def contact_page():
