@@ -21,7 +21,7 @@ class Contact(db.Model):
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer(), primary_key=True)
     user_name = db.Column(db.String(length=30), nullable=False, unique=True)
-    password = db.Column(db.String(length=60), nullable=False, unique=False)
+    password = db.Column(db.String(length=500), nullable=False, unique=False)
     email = db.Column(db.String(length=60),nullable=False, unique=True)
     
     def check_password_correction(self, attempted_password):
